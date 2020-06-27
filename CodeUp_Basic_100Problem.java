@@ -574,11 +574,58 @@ public class CodeUp_Basic_100Problem {
 		 }		
 		System.out.print(arr[0]);
 		*/
+		/*1096 바둑판 배열 생성
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[][] arr = new int[19][19];
+		
+		for(int i = 0; i<n; i++) {
+			int tmp = sc.nextInt();
+			int tmp2 = sc.nextInt();
+			for(int j =0; j<n; j++) {
+				arr[tmp][tmp2] = 1;
+			}
+		}
 		
 		
+		for(int i = 0; i<n; i++) {
+			for(int j =0; j<n; j++) {
+				System.out.print(arr[i][j]);
+			}
+			System.out.println("");
+		}
+		*/
 		
+		Scanner sc = new Scanner(System.in);
+		int w = sc.nextInt();
+		int h = sc.nextInt();
+		int[][] arr = new int[w][h];
+		int n = sc.nextInt();//막대 개수
+		for(int i = 0; i<n; i++) {
+			int l = sc.nextInt();//길이
+			int d = sc.nextInt();//방향 0은 가로 1은 세로
+			int x = sc.nextInt();//좌표
+			int y = sc.nextInt();//좌표
+			
+			if(d == 0) {
+				for(int j = y; j<y+l; j++) {
+					arr[x-1][j-1] = 1;	
+				}
+			}
+			else {
+				for(int k = x; k<x+l; k++) {
+					arr[k-1][y-1] = 1;
+				}
+			}
+		}
 		
-		
+		for(int i = 0; i<arr.length; i++) {
+			for(int j = 0; j<arr.length; j++) {
+				System.out.print(" " + arr[i][j]);
+			}
+			System.out.println("");
+		}
+
 		
 		
 		
