@@ -446,6 +446,126 @@ public class CodeUp_Basic_100Problem {
 		float result = (float) (w_pix * h_pix * bit) / (8*(2<<19));
 		System.out.printf("%.2f MB", result);
 		*/
+		/*1087  합이 입력한 정수보다 작을 동안만 계속 더하는 프로그램
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int sum = 0;		
+		
+		for(int i = 0; i>=0; i++) {
+			sum += i;
+			if(sum>num) {
+				break;
+			}
+		}
+		
+		System.out.print(sum);
+		*/
+		/*1088  3의 배수는 통과
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		for(int i = 1; i<=num; i++) {
+			if(i%3 != 0) {
+				System.out.print(" " + i);
+			}
+		}
+		*/
+		/*1089 등차수열
+		Scanner sc = new Scanner(System.in);
+		int a0 = sc.nextInt();
+		int d = sc.nextInt();
+		int n = sc.nextInt();
+		//int[] an = new int[100];
+		//for(int i = 1; i<n; i++) {
+		//	an[0] = a0;
+		//	an[i] = an[i-1] + d;
+		//}		
+		System.out.print(an[n-1]);
+		int an = a0 + (n-1)*d;
+		System.out.print(an);
+		*/
+		/*1090 등비수열
+		Scanner sc = new Scanner(System.in);
+		int a0 = sc.nextInt();
+		int r = sc.nextInt();
+		int n = sc.nextInt();
+		for(int i = 1; i<n; i++) {
+			a0 = a0 * r;
+		}
+		System.out.print(a0);
+		*/
+		/*1091 수열 계산
+		Scanner sc = new Scanner(System.in);
+		int an = sc.nextInt();
+		int mul = sc.nextInt();
+		int plus = sc.nextInt();
+		int n = sc.nextInt();
+		
+		for(int i = 1; i<n ; i++) {
+			an = (an*mul)+plus;
+		}
+		System.out.print(an);
+		*/
+		/*1092 최소공배수
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int count = 1;
+		for(int i = 1; i>=0; i++) {
+			if(i%a == 0 && i%b == 0 && i%c == 0) {
+				break;
+			}
+			else {
+				count++;
+			}
+		}
+		System.out.print(count);
+		*/
+		/*1093 출석 번호를 n번 무작위로 불렀을 때, 각 번호(1 ~ 23)가 불린 횟수를 각각 출력해보자.
+		 Scanner sc = new Scanner(System.in);
+		 int N = sc.nextInt();
+		 int[] n = new int[23];
+		 int temp;
+		 
+		 for(int i = 0; i<N; i++) {
+			 temp = sc.nextInt();
+			 n[temp] += 1; // 빈공간에 값 채워넣기
+		 }
+		 
+		 for(int i = 1; i<n.length; i++) {
+			 System.out.print(" " + n[i]);
+		 }
+		 */
+		/*1094 출석 번호를 n번 무작위로 불렀을 때, 부른 번호를 거꾸로 출력해 보자.
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		int temp;
+		int[] arr = new int[N];
+		for(int i = 0; i<N; i++) {
+			temp = sc.nextInt();// N이 부른 횟수대로 입력
+			arr[i] = temp; // 배열에 값 배정
+		}
+		
+		for(int i = N-1; i>=0; i--) {
+			System.out.print(" " + arr[i]);
+		}
+		*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 }
