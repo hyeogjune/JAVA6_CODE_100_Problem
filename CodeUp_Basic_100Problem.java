@@ -551,13 +551,29 @@ public class CodeUp_Basic_100Problem {
 			System.out.print(" " + arr[i]);
 		}
 		*/
-		
-		
-		
-		
-		
-		
-		
+		/*1095 [기초-1차원배열] 이상한 출석 번호 부르기3(설명)
+		 Scanner sc = new Scanner(System.in);
+		 int N = sc.nextInt();
+		 int[] arr = new int[N];
+		 int temp;
+		 int temp2 = 0;
+		 for(int i = 0; i<N; i++) {
+			 temp = sc.nextInt();
+			 arr[i] = temp;
+		 }
+		 
+		 for(int i = 0; i<N; i++) {
+			 for(int j = 1; j<N; j++) {
+				 if(arr[j-1]>arr[j]) {
+					 temp2 = arr[j-1];
+					 arr[j-1] = arr[j];
+					 arr[j] = temp2;// 2 1 3					 					 					 
+				 }
+				 
+			 }
+		 }		
+		System.out.print(arr[0]);
+		*/
 		
 		
 		
